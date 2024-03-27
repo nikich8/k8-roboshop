@@ -30,7 +30,7 @@ spec:
 # to comunicate pod to pod?use service to attach pod
 apiVersion: v1
 kind: Service
-meatdata:
+metadata:
   name: mongodb
   namespace: roboshop
 spec:
@@ -39,7 +39,7 @@ spec:
     project: roboshop
     tier: db
   ports:
-  - protocal: tcp
+  - protocol: tcp
     port: 27017
     targetPort: 27017
     
