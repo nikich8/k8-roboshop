@@ -36,8 +36,8 @@ meatdata:
 spec:
   selector:
     app: mongodb
-      project: roboshop
-      tier: db
+    project: roboshop
+    tier: db
   ports:
   - protocal: tcp
     port: 27017
