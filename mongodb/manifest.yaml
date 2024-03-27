@@ -26,7 +26,7 @@ spec:
       - name: mongodb
         image: chsusmi/mongodb:v1
         imagePullPolicy: Always
-----
+
 # to comunicate pod to pod?use service to attach pod
 apiVersion: v1
 kind: Service
