@@ -7,7 +7,6 @@ metadata:
     app: mongodb
     project: roboshop
     tier: db
-    
 spec:
   replicas: 1
   selector:
@@ -26,9 +25,9 @@ spec:
       - name: mongodb
         image: chsusmi/mongodb:v1
         imagePullPolicy: Always
-# to comunicate pod to pod?use service to attach pod
+
 apiVersion: v1
-kind: Service
+kind: service
 metadata:
   name: mongodb
   namespace: roboshop
@@ -41,4 +40,10 @@ spec:
   - protocol: TCP
     port: 27017
     targetPort: 27017
+
+
+
+
+
+
     
