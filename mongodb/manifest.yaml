@@ -25,7 +25,6 @@ spec:
       - name: mongodb
         image: chsusmi/mongodb:v1
         imagePullPolicy: Always
-
 apiVersion: v1
 kind: Service
 metadata:
