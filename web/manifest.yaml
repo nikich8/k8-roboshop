@@ -5,7 +5,7 @@ kind: Deployment
 metadata:
   name: web
   namespace: roboshop
-  labels: # these labels are deployment labels
+  labels: 
     app: web
     project: roboshop
     tier: web
@@ -37,7 +37,7 @@ metadata:
   name: web
   namespace: roboshop
 spec:
-  type:loadbalancer
+  type: LoadBalancer
   selector:
     app: web
     project: roboshop
