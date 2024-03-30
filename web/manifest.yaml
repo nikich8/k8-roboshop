@@ -22,11 +22,11 @@ spec:
         app: web
         project: roboshop
         tier: web
+    spec:
       containers:
       - name: web
         image: chsusmi/web:v1
         imagePullPolicy: Always
-        
 ---
 apiVersion: v1
 kind: Service
@@ -39,6 +39,7 @@ spec:
     app: web
     project: roboshop
     tier: web
+  ports:
   - protocol: TCP
-    port: 80 #service-port
-    targetPort: 80 #container-port 
+    port: 80 
+    targetPort: 80 
